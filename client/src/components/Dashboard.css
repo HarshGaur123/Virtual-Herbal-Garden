@@ -1,0 +1,95 @@
+.dashboard-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #e9f0f7;
+  font-family: Arial, sans-serif;
+}
+
+.plants-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.plant-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 20px); /* Ensures 5 cards per row with gap */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plant-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card h3 {
+  font-size: 20px;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.plant-card p {
+  font-size: 15px;
+  color: #777777;
+  margin-bottom: 25px; /* More space between text and button */
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.plant-card button {
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: stretch;
+  margin-top: auto; 
+}
+
+.plant-card button:hover {
+  background: linear-gradient(135deg, #45a049, #5aa75a);
+  transform: scale(1.05);
+}
+
+.plant-card button:active {
+  transform: scale(0.98);
+}
+.herbal-info {
+  margin-top: 30px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.herbal-info h2 {
+  color: #003366;
+}
+
+.herbal-info p {
+  max-width: 800px;
+  margin: 0 auto;
+}

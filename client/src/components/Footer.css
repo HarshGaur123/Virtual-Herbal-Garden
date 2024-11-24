@@ -1,0 +1,137 @@
+/* .footer {
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    max-width: 22750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #ecf0f1; 
+  }
+  
+  .footer-text {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 10px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ecf0f1;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+   */
+
+   .footer {
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative; /* Default positioning */
+    width: 100%; /* Full width */
+    clear: both; /* Ensures it stays below content */
+}
+
+.footer-content {
+    max-width: 1170px; /* Correcting a likely typo from "22750px" */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ecf0f1; /* Lighter color on hover */
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 10px;
+}
+
+/* Social media icons styling */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ecf0f1;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Ensures footer is pushed to the bottom if the page content is small */
+html, body {
+    min-height: 100%; /* Full height for the document */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to take available space */
+}
