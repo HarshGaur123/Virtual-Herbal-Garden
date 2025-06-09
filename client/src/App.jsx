@@ -10,6 +10,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import PlantDetail from './components/PlantDetail';
 import Services from './components/Services'; 
+import Contact from './components/Contact';
 
 
 import './App.css';
@@ -192,6 +193,7 @@ const App = () => {
               element={<PlantDetail plantsData={plantsData} />}
             />
             <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 

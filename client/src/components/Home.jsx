@@ -6,10 +6,17 @@ import './Home.css';
 
 
 const Home = () => {
-  const images = [
-    'https://wallpaperaccess.com/full/2680927.jpg',
-    'https://i.pinimg.com/originals/c6/c5/88/c6c588d5384611ba276910393bb86b32.jpg',
-    'https://dev.mos.cms.futurecdn.net/TiuLoJSNYeqoDq3G3gMhS9.jpg',
+  // const images = [
+  //   'https://wallpaperaccess.com/full/2680927.jpg',
+  //   'https://i.pinimg.com/originals/c6/c5/88/c6c588d5384611ba276910393bb86b32.jpg',
+  //   'https://dev.mos.cms.futurecdn.net/TiuLoJSNYeqoDq3G3gMhS9.jpg',
+  // ];
+  const models = [
+    '/models/tulsi.glb',
+    '/models/chamomile.glb',
+    '/models/morpankh.glb',
+    '/models/hibiscus.glb',
+    
   ];
 
   const cardData = [
@@ -39,7 +46,23 @@ const Home = () => {
   return (
     <div>
       <h1>Virtual Herbal Garden</h1>
-      <Carousel images={images} autoPlay={true} autoPlayInterval={4000} />
+      <div className="hero-section">
+  <div className="hero-text">
+    <h1>Welcome to the Virtual Herbal Garden</h1>
+    <p>
+      Discover the medicinal power of nature through immersive 3D plant models. Learn how ancient herbs can help modern wellness.
+    </p>
+    <button className="hero-button">Explore Now</button>
+  </div>
+  <div className="hero-image">
+    <img
+      src="https://img.freepik.com/premium-vector/herbal-pharmacy-plant-medicine-natural-remedies-isometric-illustration_198565-1206.jpg"
+      alt="Herbal Garden"
+    />
+  </div>
+</div>
+      {/* <Carousel images={images} autoPlay={true} autoPlayInterval={4000} /> */}
+      <Carousel models={models} autoPlay={true} autoPlayInterval={5000} />
       <div className="card-container">
         {cardData.map((card, index) => (
           <Card

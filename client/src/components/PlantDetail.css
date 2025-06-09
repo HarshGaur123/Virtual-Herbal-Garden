@@ -9,7 +9,7 @@
   color: #333;
 }
 
-/* Canvas Container */
+
 .plant-canvas-container {
   width: 100%;
   max-width: 800px;
@@ -24,10 +24,10 @@
 .plant-canvas {
   width: 100%;
   height: 100%;
-  background-color: #ffffff; /* Neutral canvas background */
+  background-color: #ffffff; 
 }
 
-/* Plant Info Section */
+
 .plant-info {
   width: 100%;
   max-width: 800px;
@@ -51,19 +51,19 @@
   text-align: justify;
 }
 
-/* Hotspot Info Popup */
+
 .hotspot-info {
   position: absolute;
-  top: 20%; /* Position it towards the top of the canvas */
+  top: 20%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10; /* Ensure it is above the canvas */
+  z-index: 10; 
   padding: 20px;
-  background: rgba(255, 235, 197, 0.95); /* Semi-transparent background */
+  background: rgba(255, 235, 197, 0.95); 
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px; /* Fixed width for consistent appearance */
+  width: 300px; 
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -88,7 +88,7 @@
   background: #388e3c;
 }
 
-/* Fade-in animation for hotspot info */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -100,7 +100,7 @@
   }
 }
 
-/* Hotspot Sphere Styling */
+
 mesh {
   transition: transform 0.2s;
 }
@@ -109,7 +109,7 @@ mesh:hover {
   transform: scale(1.2);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .plant-detail {
     padding: 10px;
@@ -126,4 +126,19 @@ mesh:hover {
   .plant-info p {
     font-size: 0.9rem;
   }
+}
+
+.back-button {
+  margin-bottom: 1rem;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  background-color: #388e3c;
 }

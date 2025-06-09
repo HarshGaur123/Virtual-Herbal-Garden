@@ -1,24 +1,22 @@
 
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import './PlantDetail.css';
+import './PlantDetail.css'; // CSS for styling
 
-// Hotspot component (increased size)
 const Hotspot = ({ position, info, onClick }) => {
   return (
     <mesh position={position} onClick={() => onClick(info)} castShadow receiveShadow>
-      {/* Increase the radius of the hotspot for larger size */}
-      <sphereGeometry args={[5, 16, 16]} /> {/* Radius increased to 1 */}
+      <sphereGeometry args={[5, 16, 16]} />
       <meshStandardMaterial color="red" />
     </mesh>
   );
 };
 
-// PlantDetail component
 const PlantDetail = ({ plantsData }) => {
   const { id } = useParams();
+  const navigate = useNavigate(); // ✅ Used for navigation
   const plant = plantsData.find((p) => p._id === id);
   const [hotspotInfo, setHotspotInfo] = useState(null);
 
@@ -34,6 +32,9 @@ const PlantDetail = ({ plantsData }) => {
   return (
     <div className="plant-detail">
       <div className="plant-info">
+        <button onClick={() => navigate('/dashboard')} className="back-button">
+          ← Back to Dashboard
+        </button>
         <h1>{plant.name}</h1>
         <p>{plant.longDescription}</p>
         {hotspotInfo && (
@@ -48,13 +49,11 @@ const PlantDetail = ({ plantsData }) => {
           <ambientLight intensity={0.5} />
           <directionalLight position={[0, 10, 5]} />
           <Model modelPath={plant.model} />
-          
-          {/* Hotspots with larger size and positioned closer */}
           {plant.hotspots.map((hotspot, index) => (
             <Hotspot
               key={index}
               position={[
-                hotspot.position.x * 12,  // Adjust for scale factor
+                hotspot.position.x * 12,
                 hotspot.position.y * 12,
                 hotspot.position.z * 12
               ]}
@@ -65,7 +64,6 @@ const PlantDetail = ({ plantsData }) => {
           <OrbitControls />
         </Canvas>
       </div>
-      
     </div>
   );
 };

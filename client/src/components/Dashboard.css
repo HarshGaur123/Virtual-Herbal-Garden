@@ -1,4 +1,4 @@
-.dashboard-container {
+/* .dashboard-container {
   text-align: center;
   padding: 30px;
   background-color: #e9f0f7;
@@ -17,7 +17,7 @@
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  width: calc(20% - 20px); /* Ensures 5 cards per row with gap */
+  width: calc(20% - 20px); 
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@
 .plant-card p {
   font-size: 15px;
   color: #777777;
-  margin-bottom: 25px; /* More space between text and button */
+  margin-bottom: 25px; 
   line-height: 1.5;
   flex-grow: 1;
 }
@@ -92,4 +92,165 @@
 .herbal-info p {
   max-width: 800px;
   margin: 0 auto;
+} */
+
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Heading */
+.dashboard-container h2 {
+  font-size: 2rem;
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+/* Email text */
+.dashboard-container p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Plants Grid Container */
+.plants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Plant Card */
+.plant-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.plant-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Plant Title */
+.plant-card h3 {
+  font-size: 1.3rem;
+  margin: 16px 0 8px;
+  color: #004d40;
+}
+
+/* Plant Description */
+.plant-card p {
+  font-size: 0.95rem;
+  color: #666;
+  flex-grow: 1;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.plant-card button {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: stretch;
+  margin-top: auto;
+}
+
+.plant-card button:hover {
+  background: linear-gradient(to right, #34a68a, #134d87);
+  transform: scale(1.05);
+}
+
+.plant-card button:active {
+  transform: scale(0.98);
+}
+
+/* Herbal Information Section */
+.herbal-info {
+  margin-top: 50px;
+  padding: 30px 20px;
+  background: #fafafa;
+  border-left: 6px solid #00796b;
+  border-radius: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.herbal-info h2 {
+  font-size: 1.8rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.herbal-info p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plant-card {
+    width: 90%;
+  }
+
+  .dashboard-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .herbal-info {
+    padding: 20px;
+  }
+}
+
+.read-more-button {
+  background: none;
+  border: none;
+  color: #4CAF50; 
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 0.8rem;
+  padding: 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+  
 }
