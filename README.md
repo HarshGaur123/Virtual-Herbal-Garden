@@ -1,27 +1,28 @@
 # Virtual-Herbal-Garden
 This is an Interactive Platform in which 3d models have been used for describing medicinal values of plants .
 
+
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](./src/screenshots/home.png)
-![Home Page](./src/screenshots/home1.png)
+![Home Page](./server/screenshots/home.png)
+![Home Page](./server/screenshots/home1.png)
 
 ### Service Page
-![Service Page](./src/screenshots/service.png)
+![Service Page](./server/screenshots/service.png)
 
 ### Contact Page
-![Contact Page](./src/screenshots/contact.png)
+![Contact Page](./server/screenshots/contact.png)
 
 ### SignUp Page
-![SignUp Page](./src/screenshots/signup.png)
+![SignUp Page](./server/screenshots/signup.png)
 
 ### Dashboard
-![Dashboard](./src/screenshots/dashboard.png)
-![Dashboard](./src/screenshots/dashboard1.png)
+![Dashboard](./server/screenshots/dashboard.png)
+![Dashboard](./server/screenshots/dashboard1.png)
 
 ### 3D Model
-![3D Model](./src/screenshots/3dmodel.png)
+![3D Model](./server/screenshots/3dmodel.png)
 
 ## 🌿 Features
 
@@ -42,3 +43,4 @@ This is an Interactive Platform in which 3d models have been used for describing
 
 - 🔐 Authentication System
   Secure user login, signup, and session-based access to dashboard features.
+
