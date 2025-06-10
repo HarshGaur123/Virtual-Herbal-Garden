@@ -43,4 +43,3 @@ This is an Interactive Platform in which 3d models have been used for describing
 
 - 🔐 Authentication System
   Secure user login, signup, and session-based access to dashboard features.
-
