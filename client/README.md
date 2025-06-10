@@ -10,24 +10,24 @@ Currently, two official plugins are available:
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](./screenshots/home.png)
-![Home Page](./screenshots/home1.png)
+![Home Page](./src/screenshots/home.png)
+![Home Page](./src/screenshots/home1.png)
 
 ### Service Page
-![Service Page](./screenshots/service.png)
+![Service Page](./src/screenshots/service.png)
 
 ### Contact Page
-![Contact Page](./screenshots/contact.png)
+![Contact Page](./src/screenshots/contact.png)
 
 ### SignUp Page
-![SignUp Page](./screenshots/signup.png)
+![SignUp Page](./src/screenshots/signup.png)
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-![Dashboard](./screenshots/dashboard1.png)
+![Dashboard](./src/screenshots/dashboard.png)
+![Dashboard](./src/screenshots/dashboard1.png)
 
 ### 3D Model
-![3D Model](./screenshots/3dmodel.png)
+![3D Model](./src/screenshots/3dmodel.png)
 
 ## 🌿 Features
 
